@@ -47,7 +47,7 @@ pipeline {
             }
             steps {
                 kubernetesDeploy(
-                    kubeconfigID: 'kubeconfig',
+                    kubeconfigId: 'kubeconfig',
                     configs: 'trains-schdeule-kube-canary.yml',
                     enableConfigSubstitution: true
                 )
